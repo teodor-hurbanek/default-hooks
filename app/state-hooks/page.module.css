@@ -1,0 +1,19 @@
+.statePage {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.setSection code {
+  display: block;
+}
+
+.keySection div,
+.countSection div {
+  margin-top: 1rem;
+}
+
+.countSection {
+  border-bottom: 0.1rem solid white;
+  padding-bottom: 1rem;
+}
