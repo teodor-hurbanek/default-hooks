@@ -2,15 +2,24 @@
 import Button from '@/components/UI/Button'
 import styles from './page.module.css'
 import Form from '@/components/state-hooks/Form'
-import { useState } from 'react'
+import { useReducer, useState } from 'react'
 import CountLabel from '@/components/state-hooks/CountLabel'
+import ageReducer from '@/reducers/ageReducer'
 
 export default function Home() {
   const [version, setVersion] = useState(0)
   const [count, setCount] = useState(0)
 
+  const [state, dispatch] = useReducer(ageReducer, { age: 42 })
+
+  const handleClick = () => {
+    dispatch({
+      type: 'incremented_age',
+    })
+  }
+
   return (
-    <div className={styles.statePage}>
+    <>
       <section>
         <h2>State hooks</h2>
         <p>
@@ -62,19 +71,14 @@ export default function Home() {
       </section>
 
       <section>
-        <h3>useRef</h3>
-        <p>useRef is a React Hook that lets you reference a value that’s not needed for rendering.</p>
+        <h3>useReducer</h3>
+        <p>useReducer is a React Hook that lets you add a reducer to your component.</p>
       </section>
 
       <section>
-        <ul>
-          <li>You can store information between re-renders (unlike regular variables, which reset on every render).</li>
-          <li>Changing it does not trigger a re-render (unlike state variables, which trigger a re-render).</li>
-          <li>
-            The information is local to each copy of your component (unlike the variables outside, which are shared).
-          </li>
-        </ul>
+        <Button onClick={handleClick}>Increment age</Button>
+        <p>Hello! you are {state.age}.</p>
       </section>
-    </div>
+    </>
   )
 }

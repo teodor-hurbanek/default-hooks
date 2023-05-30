@@ -1,0 +1,8 @@
+.refSection {
+  border-bottom: 0.1rem solid white;
+  padding-bottom: 1rem;
+}
+
+.imperativeSection {
+  display: flex;
+}
