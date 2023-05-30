@@ -1,0 +1,23 @@
+.panelSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.panelSection form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.panel {
+  border: 0.1rem solid rgb(128, 128, 128);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.panel div {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1rem;
+}
