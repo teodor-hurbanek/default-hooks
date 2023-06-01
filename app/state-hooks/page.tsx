@@ -6,7 +6,7 @@ import { useReducer, useState } from 'react'
 import CountLabel from '@/components/state-hooks/CountLabel'
 import ageReducer from '@/reducers/ageReducer'
 
-export default function Home() {
+export default function State() {
   const [version, setVersion] = useState(0)
   const [count, setCount] = useState(0)
 

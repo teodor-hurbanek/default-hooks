@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import Button from '../UI/Button'
-import ThemeContext from '@/contexts/themeContext'
+import { ThemeContext } from '@/contexts/themeContext'
 import styles from '@/app/context-hooks/page.module.css'
 
 const Panel = () => {

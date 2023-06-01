@@ -1,5 +1,6 @@
 import React from 'react'
 import Input from '../UI/Input'
+import Label from '../UI/Label'
 
 interface PanelFormProps {
   colorScheme: string
@@ -13,9 +14,9 @@ const PanelForm = ({ colorScheme, onChangeRadio }: PanelFormProps) => {
   return (
     <form onChange={e => handleChangeRadio(e)}>
       <Input type={'radio'} name={'colorScheme'} value={'dark'} checked={colorScheme === 'dark'} />
-      <label htmlFor="dark">Dark</label>
+      <Label htmlFor={'dark'}>Dark</Label>
       <Input type={'radio'} name={'colorScheme'} value={'light'} checked={colorScheme === 'light'} />
-      <label htmlFor="light">Light</label>
+      <Label htmlFor={'light'}>Light</Label>
     </form>
   )
 }

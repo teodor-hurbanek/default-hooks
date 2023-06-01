@@ -1,9 +1,8 @@
 'use client'
-import ThemeContext, { ColorScheme } from '@/contexts/themeContext'
+import { ThemeContext, ColorScheme } from '@/contexts/themeContext'
 import styles from './page.module.css'
 import Panel from '@/components/context-hooks/Panel'
 import { useState } from 'react'
-import Input from '@/components/UI/Input'
 import PanelForm from '@/components/context-hooks/PanelForm'
 
 export default function Context() {
@@ -12,6 +11,7 @@ export default function Context() {
   const handleChangeRadio = (e: any) => {
     setColorScheme(e.target.value)
   }
+
   return (
     <>
       <section>
