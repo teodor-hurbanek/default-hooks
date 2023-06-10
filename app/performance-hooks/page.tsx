@@ -15,7 +15,7 @@ import SlowList from '@/components/performance-hooks/SlowList'
 
 const todos = createTodos()
 
-export default function Effects() {
+export default function Performance() {
   const [tab, setTab] = useState<Tab>('all')
   const [tab1, setTab1] = useState('about')
   const [isDark, setIsDark] = useState(false)
