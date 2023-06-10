@@ -3,13 +3,14 @@ import React from 'react'
 interface ButtonProps {
   children: string
   disabled?: boolean
+  type?: 'button' | 'submit' | 'reset' | undefined
   style?: {}
-  onClick: () => void
+  onClick?: () => void
 }
 
-const Button = ({ children, disabled, style, onClick }: ButtonProps) => {
+const Button = ({ children, disabled, type, style, onClick }: ButtonProps) => {
   return (
-    <button disabled={disabled} style={style} onClick={onClick}>
+    <button disabled={disabled} type={type} style={style} onClick={onClick}>
       {children}
     </button>
   )

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Select from '../UI/Select'
-import { fetchBio, User } from '@/data/api'
+import { fetchBio, User } from '@/utils/api'
 
 const data = ['Alice', 'Bob', 'John']
 

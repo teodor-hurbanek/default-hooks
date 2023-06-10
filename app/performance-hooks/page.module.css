@@ -1,0 +1,43 @@
+.memoSection {
+  border-bottom: 0.1rem solid white;
+  padding-bottom: 1rem;
+}
+
+.memoSection button {
+  margin: 0 0.5rem 0.5rem 0;
+}
+
+.memoSection div,
+.callbackSection div {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.memoSection article,
+.callbackSection article {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.memoSection label,
+.memoSection input,
+.callbackSection label,
+.callbackSection input {
+  cursor: pointer;
+}
+
+.customHookSection {
+  border-bottom: 0.1rem solid white;
+  padding-bottom: 1rem;
+}
+
+.transitionSection nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem 0;
+}

@@ -4,7 +4,7 @@ interface InputProps {
   id?: string
   type?: string
   placeholder?: string
-  value: string
+  value?: string
   name?: string
   checked?: boolean
   onChange?: (e: any) => void
